@@ -1,1 +1,2 @@
 stack-name: node8-sam-template-path
+template-path: templates/template.yaml
