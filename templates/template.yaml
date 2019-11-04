@@ -10,7 +10,7 @@ Resources:
         - ResourceName: Function
       CodeUri: ../src/Function
       Handler: index.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs10.x
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
@@ -20,6 +20,8 @@ Parameters:
   StackTagName:
     Type: String
     Description: Stack Name (injected by Stackery at deployment time)
+    Default: node10-sls-template-path
   EnvironmentTagName:
     Type: String
     Description: Environment Name (injected by Stackery at deployment time)
+    Default: dev
